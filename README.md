@@ -46,6 +46,21 @@ Stok ve iletişim içerikleri `data/doganismakinalari-data.json` dosyasından ok
 
 Betik, bağlantı veya erişim sorunları yaşanması durumunda bunları konsola raporlar. Alternatif olarak JSON dosyasını elle düzenleyerek stok ve iletişim bilgilerini girebilirsiniz.
 
+## Hızlı Önizleme
+Web sitesini dakikalar içinde görüntülemek için aşağıdaki adımları izleyin:
+
+1. Terminal/Powershell penceresi açın ve depo klasörüne girin:
+   ```bash
+   cd depo
+   ```
+2. Basit bir HTTP sunucusu başlatın:
+   ```bash
+   python -m http.server 8000
+   ```
+   > Windows'ta `python` komutunun tanınmadığı durumlarda `py -m http.server 8000` komutunu kullanabilirsiniz.
+3. Tarayıcınızda `http://localhost:8000/index.html` adresini ziyaret edin. Stok kartları ve iletişim bilgileri birkaç saniye içinde yüklenecektir.
+4. Önizleme işiniz bittiğinde sunucuyu durdurmak için sunucu komutunun çalıştığı terminalde `Ctrl + C` tuş bileşimine basın.
+
 ## Siteyi Görüntüleme
 Projeyi yerel ortamınızda incelemek için aşağıdaki yöntemlerden birini kullanabilirsiniz:
 
