@@ -82,6 +82,16 @@ Tarayıcı, JSON dosyasını bu sunucu üzerinden sorunsuzca okuyabildiği için
 
 Sunucuyu kapatmak için terminalde `Ctrl + C` tuş bileşimini kullanabilirsiniz.
 
+## Yayınlama
+Siteyi herkese açık olarak yayınlamak için GitHub Pages kullanabilirsiniz. Depoda yer alan GitHub Actions iş akışı, `main` dalına yapılan her itmede siteyi otomatik olarak dağıtır. Aşağıdaki adımları takip edin:
+
+1. Bu depoyu GitHub'da yeni bir repoya gönderin.
+2. GitHub arayüzünde **Settings → Pages** bölümüne gidin ve "Build and deployment" alanında **GitHub Actions** seçili olduğundan emin olun.
+3. `main` dalına değişiklik gönderin veya `Actions` sekmesinden **Deploy static site to GitHub Pages** iş akışını manuel olarak çalıştırın.
+4. Dağıtım tamamlandığında iş akışı çıktısında yayınlanan site bağlantısı görünecektir. Bağlantı aynı zamanda `Settings → Pages` sayfasında da listelenir.
+
+İş akışı, depo kökündeki statik dosyaları (HTML, CSS, JS ve veri dosyalarını) `github-pages` ortamına yükler. Gerekiyorsa `deploy.yml` içinde `path` değerini değiştirerek yalnızca belirli bir klasörü yayınlayabilirsiniz.
+
 ## Geliştirme
 Projeyi düzenlemek için herhangi bir kod düzenleyici kullanabilir, değişiklikleri kaydettikten sonra yukarıdaki yöntemlerden biriyle sonucu kontrol edebilirsiniz.
 
