@@ -53,13 +53,14 @@ Web sitesini dakikalar içinde görüntülemek için aşağıdaki adımları izl
    ```bash
    cd depo
    ```
-2. Basit bir HTTP sunucusu başlatın:
+2. Aşağıdaki komutu çalıştırarak yerleşik önizleme yardımcısını başlatın:
    ```bash
-   python -m http.server 8000
+   python scripts/preview.py
    ```
-   > Windows'ta `python` komutunun tanınmadığı durumlarda `py -m http.server 8000` komutunu kullanabilirsiniz.
-3. Tarayıcınızda `http://localhost:8000/index.html` adresini ziyaret edin. Stok kartları ve iletişim bilgileri birkaç saniye içinde yüklenecektir.
-4. Önizleme işiniz bittiğinde sunucuyu durdurmak için sunucu komutunun çalıştığı terminalde `Ctrl + C` tuş bileşimine basın.
+   Komut, varsayılan tarayıcınızda `http://localhost:8000/index.html` adresini açar.
+3. Önizleme işiniz bittiğinde sunucuyu durdurmak için sunucu komutunun çalıştığı terminalde `Ctrl + C` tuş bileşimine basın.
+
+> Dilerseniz `python scripts/preview.py --port 8080 --no-open` gibi parametrelerle farklı bir port seçebilir veya tarayıcıyı otomatik açmayı kapatabilirsiniz.
 
 ## Siteyi Görüntüleme
 Projeyi yerel ortamınızda incelemek için aşağıdaki yöntemlerden birini kullanabilirsiniz:
