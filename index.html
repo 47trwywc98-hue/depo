@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Boğazkale Denetim'in vergi, denetim ve şirket dönüşüm süreçleri için sunduğu online danışmanlık hizmetlerine dakikalar içinde erişin."
+    />
+    <title>Boğazkale Denetim | Online Danışmanlık Platformu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="ust">
+      <nav class="nav">
+        <a class="brand" href="#ust">Boğazkale Denetim</a>
+        <ul class="nav__links">
+          <li><a href="#hakkimizda">Kurumsal</a></li>
+          <li><a href="#hizmetler">Hizmetler</a></li>
+          <li><a href="#platform">Platform</a></li>
+          <li><a href="#paketler">Paketler</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+        <a class="btn btn--ghost" href="#randevu">Randevu Al</a>
+      </nav>
+
+      <div class="hero__layout">
+        <div class="hero__text">
+          <span class="pill">Uzaktan mali müşavirlik</span>
+          <h1>Vergi ve denetim süreçlerinizi güvenli çevrim içi kanallarla yönetin.</h1>
+          <p>
+            SMMM, bağımsız denetim ve hukuk uzmanlarından oluşan ekibimiz, vergi
+            incelemesi, sahte belge denetimi ve yapısal dönüşüm projelerinizi dijital
+            ortamda uçtan uca yönetir.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#randevu">Görüşme Başlat</a>
+            <a
+              class="btn btn--ghost"
+              href="https://bogazkaledenetim.com.tr"
+              target="_blank"
+              rel="noopener"
+              >Resmi Site</a
+            >
+          </div>
+          <dl class="stats">
+            <div>
+              <dt>20+ yıl</dt>
+              <dd>Denetim ve mali danışmanlık deneyimi</dd>
+            </div>
+            <div>
+              <dt>48 saat</dt>
+              <dd>İçinde ön rapor ve aksiyon planı</dd>
+            </div>
+            <div>
+              <dt>%100</dt>
+              <dd>Şifreli dosya paylaşımı ve arşivleme</dd>
+            </div>
+          </dl>
+        </div>
+        <aside class="hero__card" id="randevu">
+          <h2>Online danışmanlık talep edin</h2>
+          <p>Takviminize uyan uzmanı seçin, belgelerinizi güvenle yükleyin.</p>
+          <form
+            class="hero__form"
+            action="https://formsubmit.co/info@bogazkaledenetim.com.tr"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="Online Danışmanlık Randevu Talebi" />
+            <input type="hidden" name="_captcha" value="false" />
+            <label class="input">
+              <span>Ad Soyad</span>
+              <input type="text" name="name" required placeholder="Adınızı giriniz" />
+            </label>
+            <label class="input">
+              <span>Kurumsal E-posta</span>
+              <input type="email" name="email" required placeholder="ornek@firma.com" />
+            </label>
+            <label class="input">
+              <span>İhtiyaç alanı</span>
+              <select name="service" required>
+                <option value="Vergi danismanligi">Vergi danışmanlığı</option>
+                <option value="Sahte belge denetimi">Sahte belge denetimi</option>
+                <option value="Sirket donusumu">Şirket kuruluşu / dönüşümü</option>
+                <option value="Ozel proje">Özel proje ve raporlama</option>
+              </select>
+            </label>
+            <label class="input">
+              <span>Kısa açıklama</span>
+              <textarea
+                name="message"
+                rows="3"
+                placeholder="Beklentilerinizi veya mevcut durumu paylaşın"
+                required
+              ></textarea>
+            </label>
+            <button class="btn btn--primary" type="submit">Randevu iste</button>
+          </form>
+          <p class="hero__hint">Telefon ile ulaşım: +90 (216) 000 00 00</p>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="section about" id="hakkimizda">
+        <div class="section__intro">
+          <h2>Finansal dönüşüm yolculuğunuz için stratejik ortak</h2>
+          <p>
+            Boğazkale Denetim ve Serbest Muhasebeci Mali Müşavirlik Ltd. Şti., İTO kaydıyla
+            faaliyet gösterir ve İstanbul Ümraniye ofisinden ulusal ölçekte şirketlere
+            danışmanlık sunar. Çevrim içi hizmet modelimiz, klasik mali müşavirlik
+            anlayışını dijital deneyimle birleştirir.
+          </p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>Yetkin disiplinler</h3>
+            <p>
+              Vergi, denetim ve hukuk disiplinlerinde lisanslı uzmanlarımız tek masada
+              buluşarak karmaşık süreçlere çözüm getirir.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Kanıta dayalı metodoloji</h3>
+            <p>
+              Risk tarama algoritmaları, sektör benchmarkları ve veri görselleştirme araçlarıyla
+              karar alma süresini kısaltıyoruz.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Denetlenebilir kayıtlar</h3>
+            <p>
+              Tüm görüşmeler, paylaşılan belgeler ve onay adımları kronolojik olarak raporlanır,
+              regülasyonlara hazır dosyalar oluşturulur.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section services" id="hizmetler">
+        <div class="section__intro">
+          <h2>Uzmanlık alanlarımız</h2>
+          <p>Her hizmet paketi, dijital çalışma alanı ve proje sorumlusu ile desteklenir.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>Vergi danışmanlığı</h3>
+            <ul>
+              <li>Ön mali analiz ve vergi planlama</li>
+              <li>İnceleme süreci hazırlığı ve savunma dokümantasyonu</li>
+              <li>İdari başvuru, uzlaşma ve dava koordinasyonu</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Sahte belge denetimi</h3>
+            <ul>
+              <li>Ön risk taraması ve veri analizi raporu</li>
+              <li>Belge inceleme ve şüpheli kayıt tespiti</li>
+              <li>Yetkili merciler için savunma dosyaları</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Kuruluş &amp; dönüşüm</h3>
+            <ul>
+              <li>Şirket kuruluşu, tür değişikliği ve ortaklık sözleşmeleri</li>
+              <li>Birleşme-bölünme ve yeniden yapılanma danışmanlığı</li>
+              <li>Finansal raporlama ve iç kontrol tasarımı</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section platform" id="platform">
+        <div class="platform__content">
+          <div class="section__intro">
+            <h2>Online platform nasıl çalışır?</h2>
+            <p>
+              Tek ekrandan toplantıları planlayın, dokümanları yükleyin ve görevleri takip edin.
+              Platformumuz ISO 27001 standartlarıyla uyumludur ve her işlem iki aşamalı olarak doğrulanır.
+            </p>
+          </div>
+          <ol class="timeline">
+            <li>
+              <span>1</span>
+              <div>
+                <h3>Randevu &amp; hazır bulunuşluk</h3>
+                <p>Takviminize uyan uzmanı seçin, gerekli belgeler otomatik liste halinde paylaşılır.</p>
+              </div>
+            </li>
+            <li>
+              <span>2</span>
+              <div>
+                <h3>Görüşme &amp; görevler</h3>
+                <p>Video konferans sırasında alınan notlar görev listesine düşer, anlık bildirimlerle ekibinizle paylaşılır.</p>
+              </div>
+            </li>
+            <li>
+              <span>3</span>
+              <div>
+                <h3>Raporlama &amp; arşiv</h3>
+                <p>Onaylanan aksiyonlar PDF olarak arşivlenir, gerektiğinde denetim kurumlarına sunulacak formatta hazırlanır.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <figure class="platform__preview" aria-label="Platform ekran ön izlemesi">
+          <div class="preview__window">
+            <div class="preview__header">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="preview__body">
+              <div class="preview__sidebar">
+                <p class="preview__title">Projeler</p>
+                <ul>
+                  <li class="active">Vergi İncelemesi 2024</li>
+                  <li>Sahte Belge Risk Tarama</li>
+                  <li>Şirket Tür Değişikliği</li>
+                </ul>
+                <p class="preview__title">Belgeler</p>
+                <div class="preview__files">
+                  <span>VUK-Ön Analiz.pdf</span>
+                  <span>Rapor-Taslak.docx</span>
+                  <span>Tutanak.xlsx</span>
+                </div>
+              </div>
+              <div class="preview__content">
+                <h3>Görüşme Notları</h3>
+                <p>"Vergi incelemesi kapsamında stok sayımlarına ilişkin destekleyici belgeler 15 Şubat'a kadar sisteme yüklenecek."</p>
+                <div class="preview__cards">
+                  <article>
+                    <h4>Görevler</h4>
+                    <ul>
+                      <li>Risk matrisi güncelle</li>
+                      <li>İlk savunma taslağını hazırla</li>
+                      <li>Finansal tablo analizini doğrula</li>
+                    </ul>
+                  </article>
+                  <article>
+                    <h4>Son teslim</h4>
+                    <p>48 saat içinde ön rapor paylaşılır. İlgili departmanlara otomatik e-posta gider.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </figure>
+      </section>
+
+      <section class="section highlight">
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>PCI-DSS uyumlu ödeme altyapısı</h3>
+            <p>Online tahsilat ve avans yönetimi için güvenli ödeme bağlantıları sunuyoruz.</p>
+          </article>
+          <article class="card">
+            <h3>Uzman havuzu</h3>
+            <p>Denetim, vergi ve hukuk disiplinlerinden 12 kişilik kıdemli uzman kadrosu.</p>
+          </article>
+          <article class="card">
+            <h3>Ölçülebilir performans</h3>
+            <p>Her proje için KPI panosu, ilerleme yüzdesi ve teslimat tarihleri tek ekranda.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section testimonials">
+        <div class="section__intro">
+          <h2>Müşteri yorumları</h2>
+          <p>Farklı sektörlerden işletmeler, dijital danışmanlık modelimizle süreçlerini hızlandırdı.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="quote">
+            <p>
+              “Vergi incelemesi sürecinde tüm belgeleri tek portalda toparladık. 72 saat içinde savunma
+              stratejisi netleşti.”
+            </p>
+            <span>– Finans Direktörü, Gıda İmalatı</span>
+          </article>
+          <article class="quote">
+            <p>
+              “Sahte belge taraması için geliştirdikleri veri analiz paneli sayesinde riskli işlemleri
+              kolayca tespit ettik.”
+            </p>
+            <span>– Mali İşler Müdürü, Lojistik</span>
+          </article>
+          <article class="quote">
+            <p>
+              “Şirket birleşmesi sürecinde tüm hukuk ve mali entegrasyon adımlarını çevrim içi takip edebildik.”
+            </p>
+            <span>– CEO, Teknoloji Start-up</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section pricing" id="paketler">
+        <div class="section__intro">
+          <h2>İhtiyacınıza göre paketleyin</h2>
+          <p>Her paket, çevrim içi platform erişimi ve uzman danışman ile haftalık durum raporu içerir.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="price-card">
+            <h3>Başlangıç</h3>
+            <p class="price">4.500 ₺</p>
+            <ul>
+              <li>Ayda 2 uzman görüşmesi</li>
+              <li>Temel doküman inceleme</li>
+              <li>Vergi gündemi raporları</li>
+            </ul>
+            <a class="btn btn--ghost" href="#randevu">Paketi İncele</a>
+          </article>
+          <article class="price-card price-card--featured">
+            <span class="badge">Popüler</span>
+            <h3>Profesyonel</h3>
+            <p class="price">9.500 ₺</p>
+            <ul>
+              <li>Haftalık strateji toplantısı</li>
+              <li>Sahte belge risk taraması</li>
+              <li>Kurumsal eğitim oturumu</li>
+            </ul>
+            <a class="btn btn--primary" href="#randevu">Paketi Seç</a>
+          </article>
+          <article class="price-card">
+            <h3>Kurumsal</h3>
+            <p class="price">Teklif alın</p>
+            <ul>
+              <li>Özel proje ekibi</li>
+              <li>Yerinde ve uzaktan denetim kombinasyonu</li>
+              <li>Uyum politikası tasarımı</li>
+            </ul>
+            <a class="btn btn--ghost" href="mailto:info@bogazkaledenetim.com.tr">Teklif Talebi</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section faq">
+        <div class="section__intro">
+          <h2>Sık sorulan sorular</h2>
+          <p>Platformun çalışma biçimini ve güvenlik yaklaşımımızı detaylandırdık.</p>
+        </div>
+        <div class="faq__list">
+          <details>
+            <summary>Belgelerimi yükledikten sonra kimler görebilir?</summary>
+            <p>Yalnızca yetkilendirilmiş proje ekibiniz erişebilir. Tüm erişimler loglanır ve denetim izi tutulur.</p>
+          </details>
+          <details>
+            <summary>Vergi incelemesi başlamadan önce nasıl hazırlık yapıyoruz?</summary>
+            <p>Ön denetim kontrol listesi paylaşılır, eksik belgeler için görev ataması yapılır ve kritik riskler raporlanır.</p>
+          </details>
+          <details>
+            <summary>Platforma nasıl giriş yaparım?</summary>
+            <p>Randevu sonrası size özel güvenlik kodu içeren davet e-postası gönderilir. İki aşamalı doğrulama zorunludur.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section contact" id="iletisim">
+        <div class="section__intro">
+          <h2>İletişim</h2>
+          <p>İstanbul Ümraniye ofisimizden ve dijital kanallarımızdan bize ulaşabilirsiniz.</p>
+        </div>
+        <div class="contact__grid">
+          <article class="contact__card">
+            <h3>Ofis Bilgileri</h3>
+            <p>Yamanevler Mah. Siteyolu Cad. No:5<br />Ümraniye / İstanbul</p>
+            <p><strong>İTO</strong> Sicil Kaydı</p>
+            <a class="contact__link" href="tel:+902160000000">+90 (216) 000 00 00</a>
+            <a class="contact__link" href="mailto:info@bogazkaledenetim.com.tr">info@bogazkaledenetim.com.tr</a>
+          </article>
+          <form
+            class="contact__form"
+            action="https://formsubmit.co/info@bogazkaledenetim.com.tr"
+            method="POST"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_subject" value="Web Sitesi İletişim Formu" />
+            <label class="input">
+              <span>Ad Soyad</span>
+              <input type="text" name="name" required placeholder="Adınız" />
+            </label>
+            <label class="input">
+              <span>E-posta</span>
+              <input type="email" name="email" required placeholder="ornek@firma.com" />
+            </label>
+            <label class="input">
+              <span>Mesajınız</span>
+              <textarea name="message" rows="4" required placeholder="İhtiyacınızı paylaşın"></textarea>
+            </label>
+            <button class="btn btn--primary" type="submit">Gönder</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        &copy; <span id="year"></span> Boğazkale Denetim ve Serbest Muhasebeci Mali Müşavirlik Ltd. Şti. Tüm hakları saklıdır.
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const nav = document.querySelector(".nav");
+      const navLinks = Array.from(document.querySelectorAll(".nav__links a"));
+
+      if (nav && navLinks.length) {
+        const observedSections = navLinks
+          .map((link) => document.querySelector(link.getAttribute("href")))
+          .filter(Boolean);
+
+        const setActiveLink = (id) => {
+          navLinks.forEach((link) => {
+            const matches = link.getAttribute("href") === `#${id}`;
+            link.classList.toggle("active", matches);
+          });
+        };
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                setActiveLink(entry.target.id);
+              }
+            });
+          },
+          {
+            rootMargin: "-45% 0px -45% 0px",
+          }
+        );
+
+        observedSections.forEach((section) => observer.observe(section));
+        if (observedSections.length) {
+          setActiveLink(observedSections[0].id);
+        }
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            setActiveLink(link.getAttribute("href").slice(1));
+          });
+        });
+
+        const updateNavState = () => {
+          if (window.scrollY > 40) {
+            nav.classList.add("nav--scrolled");
+          } else {
+            nav.classList.remove("nav--scrolled");
+          }
+        };
+
+        updateNavState();
+        window.addEventListener("scroll", updateNavState);
+      }
+
+      const details = document.querySelectorAll("details");
+      details.forEach((detail) => {
+        detail.addEventListener("toggle", () => {
+          if (detail.open) {
+            details.forEach((other) => {
+              if (other !== detail) {
+                other.removeAttribute("open");
+              }
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
