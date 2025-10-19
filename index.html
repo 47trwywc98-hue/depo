@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Depo İş Makineleri</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header class="top-bar">
+        <div class="container">
+            <div class="logo">Depo İş Makineleri</div>
+            <nav class="main-nav">
+                <a href="#hakkimizda">Hakkımızda</a>
+                <a href="#stok">Stoktan Makineler</a>
+                <a href="#servis">Servis &amp; Bakım</a>
+                <a href="#yedek-parca">Yedek Parça</a>
+                <a href="#iletisim">İletişim</a>
+            </nav>
+            <a class="phone" id="header-phone" href="tel:+902123456789">+90 (212) 345 67 89</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>1996'dan Beri Güvenilir İş Makinesi Çözüm Ortağınız</h1>
+                <p>
+                    Depo İş Makineleri olarak ikinci el bekoloder, loder, forklift ve ekskavatör satışlarında
+                    uzmanız. Satış öncesi danışmanlıktan satış sonrası servis ve yedek parça tedarikine kadar yanınızdayız.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="#stok">Stoktaki Makineler</a>
+                    <a class="btn secondary" href="#iletisim">Uzmanımıza Sorun</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <h2>Hızlı Teklif Alın</h2>
+                <form>
+                    <label for="name">Adınız Soyadınız</label>
+                    <input id="name" type="text" name="name" placeholder="Adınız" />
+
+                    <label for="phone">Telefon</label>
+                    <input id="phone" type="tel" name="phone" placeholder="05xx xxx xx xx" />
+
+                    <label for="machine">İlgilendiğiniz Makine</label>
+                    <select id="machine" name="machine">
+                        <option value="">Seçiniz</option>
+                        <option>Bekoloder</option>
+                        <option>Loder</option>
+                        <option>Forklift</option>
+                        <option>Ekskavatör</option>
+                        <option>Diğer</option>
+                    </select>
+
+                    <button type="submit" class="btn primary full">Teklif Gönder</button>
+                    <small>Form demo amaçlıdır.</small>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="hakkimizda" class="about">
+        <div class="container">
+            <div class="about-text">
+                <h2>Her Makinede 28 Yıllık Tecrübe</h2>
+                <p>
+                    Şirketimiz, 1996 yılından bu yana ikinci el iş makinesi alım satımında güvenilir bir isimdir.
+                    Türkiye genelinde geniş tedarik ağı ile çalışır, her makineyi titizlikle kontrol eder ve müşterilerimize
+                    en doğru çözümü sunarız. Tam kapsamlı bakım ve servis ekibimiz sayesinde, satın aldığınız makineye
+                    satış sonrasında da değer katmaya devam ederiz.
+                </p>
+                <ul class="about-highlights">
+                    <li>Uzman teknik ekip ve makine mühendisleri</li>
+                    <li>Detaylı ekspertiz ve bakım raporları</li>
+                    <li>Esnek finansman ve takas imkânları</li>
+                </ul>
+            </div>
+            <div class="about-stats">
+                <div class="stat">
+                    <span class="stat-number">1.500+</span>
+                    <span class="stat-label">Teslim Edilen Makine</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">%98</span>
+                    <span class="stat-label">Müşteri Memnuniyeti</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Aktif Servis Bölgesi</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stok" class="inventory">
+        <div class="container">
+            <header class="section-header">
+                <h2>Öne Çıkan Stok Makinelerimiz</h2>
+                <p>Her makinemiz teslimattan önce kapsamlı test ve bakım sürecinden geçer.</p>
+            </header>
+            <div class="inventory-grid" id="stock-list"></div>
+            <p class="inventory-empty" id="stock-empty-message" hidden></p>
+        </div>
+    </section>
+
+    <section id="yedek-parca" class="parts">
+        <div class="container">
+            <header class="section-header">
+                <h2>Orijinal ve Muadil Yedek Parça Tedariki</h2>
+                <p>Motor, hidrolik, yürüyüş aksamı ve elektrik sistemleri için hızlı teslimat seçenekleri.</p>
+            </header>
+            <div class="parts-grid">
+                <div class="parts-item">
+                    <h3>Hidrolik Sistemler</h3>
+                    <p>Pompa, beyin, hortum ve sızdırmazlık kitleri stoktan teslim.</p>
+                </div>
+                <div class="parts-item">
+                    <h3>Motor Bileşenleri</h3>
+                    <p>Piston, segman, turbo, enjektör gibi kritik parçalar için garantili çözümler.</p>
+                </div>
+                <div class="parts-item">
+                    <h3>Yürüyüş Takımları</h3>
+                    <p>Palet, rulo, zincir ve dişliler için OEM ve muadil alternatifler.</p>
+                </div>
+                <div class="parts-item">
+                    <h3>Sarf Malzemeleri</h3>
+                    <p>Filtreler, yağlar ve bakım kitleri ile hızlı servis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servis" class="service">
+        <div class="container">
+            <div class="service-text">
+                <h2>Mobil Servis ve Atölye Desteği</h2>
+                <p>
+                    Yetkin teknisyenlerimiz arıza tespiti, revizyon ve planlı bakım süreçlerinde 7/24 yanınızdadır.
+                    Mobil servis araçlarımızla sahada müdahale eder, gerektiğinde atölyemizde kapsamlı revizyonlar yaparız.
+                </p>
+                <ul>
+                    <li>Periyodik bakım planlaması</li>
+                    <li>Hızlı arıza tespiti ve raporlama</li>
+                    <li>Operatör eğitimleri ve devreye alma</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Servis Çağırın</h3>
+                <p>Bir uzmana bağlanmak için 7/24 bizi arayın.</p>
+                <a class="btn secondary full" id="service-phone" href="tel:+905321234567">+90 (532) 123 45 67</a>
+                <p class="availability">İstanbul, Ankara, İzmir ve çevre illerde aynı gün servis.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Makinenizi Satmak mı İstiyorsunuz?</h2>
+            <p>Ekspertiz ekibimiz makinenizi yerinde inceleyip aynı gün içinde alım teklifini paylaşır.</p>
+            <a class="btn primary" href="#iletisim">Ekspertiz Randevusu Al</a>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <header class="section-header">
+                <h2>Müşterilerimiz Ne Diyor?</h2>
+            </header>
+            <div class="testimonial-grid">
+                <blockquote>
+                    <p>"Depo İş Makineleri'nden aldığımız bekoloder sorunsuz çalışıyor. Tüm bakım kayıtları eksiksizdi."</p>
+                    <cite>Ahmet Demir · Şantiye Şefi</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"Satış sonrası servis ekibi her zaman hızlı ulaştı, yedek parça tedariğinde hiç zorlanmadık."</p>
+                    <cite>Sevgi Karaca · Lojistik Müdürü</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"Makinemizi takas ederek yeni bir forklift aldık. Tüm süreç şeffaf ve güven vericiydi."</p>
+                    <cite>Ali Yıldız · Depo Yöneticisi</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <footer id="iletisim" class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Depo İş Makineleri</h3>
+                <p>İkinci el iş makinesi alım satımı, yedek parça ve servis çözümleri.</p>
+                <p>1996'dan bu yana güvenilir iş ortağınız.</p>
+            </div>
+            <div>
+                <h4>İletişim</h4>
+                <ul>
+                    <li><a id="contact-phone" href="tel:+902123456789">+90 (212) 345 67 89</a></li>
+                    <li><a id="contact-email" href="mailto:info@depomakine.com">info@depomakine.com</a></li>
+                    <li id="contact-address">İstoç Oto Sanayi Sitesi, No:12 Bağcılar / İstanbul</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Çalışma Saatleri</h4>
+                <ul>
+                    <li>Pazartesi - Cumartesi: 08:30 - 18:30</li>
+                    <li>Pazar: Randevu ile</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Bizi Takip Edin</h4>
+                <div class="social">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <small>© 2024 Depo İş Makineleri. Tüm hakları saklıdır.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="site-data.js"></script>
+</body>
+</html>
